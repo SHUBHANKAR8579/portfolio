@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Websites</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/shubhankar nag.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web developer</p>
+                <h1>Hi, I'm  <span>Shubhankar Nag</span></h1>
+                <h3>From Sathyabama Institute Of Science And Technology</h3>
+
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/download.png">
+                </div>
+                <div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p> student at Sathyabama Institute of Science and Technology 
+                            is known for their passion for learning and dedication towards their education. 
+                            They are enrolled in a variety of courses, from engineering to computer science and other scientific fields.
+                             They have a strong academic background and are always striving to improve their knowledge and skills.
+                            As a 2nd year student, they have a good understanding of the fundamental concepts of their chosen
+                            field and are ready to dive deeper into more advanced topics.
+                            They are actively involved in extracurricular activities, clubs, and events on campus that help them develop 
+                            their personality and leadership skills.
+                            In addition, they have recently gained a month of experience in web development.
+                            This experience has given them exposure to various web technologies, programming languages, and frameworks. 
+                            They have learned the basics of web design, HTML, CSS, JavaScript, and other tools and techniques that are 
+                            essential for building dynamic and responsive websites.
+                            Overall, a student at Sathyabama Institute of Science and Technology pursuing their 2nd </p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link"onclick="opentab('skill')">skills</p>
+                                <p class="tab-links active-link"onclick="opentab('experience')">experince</p>
+                                <p class="tab-links active-link"onclick="opentab('education')">education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>UI/UX</span><br>Desigining Web/App interfaces</li>
+                                    <li><span>Web Development</span><br>Web app development</li>
+                                    <li><span>App development</span><br>building Android/ios apps</li>
+                                </ul>
+                            </div>
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+    }
+</script>
+
+</body>
+</html>
